@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Food Ordering</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #fff8f0;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background: #e74c3c;
+            color: white;
+            padding: 25px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .food {
+            background: white;
+            padding: 15px;
+            width: 220px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .food img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        button {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Foodie's Restaurant</h1>
+    <p>Order Delicious Food Online!</p>
+</header>
+
+<h2>Our Food Menu</h2>
+
+<div class="menu">
+
+    <div class="food">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400" alt="Burger">
+        <h3>Cheese Burger</h3>
+        <p>Price: ₹120</p>
+        <button onclick="order('Cheese Burger')">Order Now</button>
+    </div>
+
+    <div class="food">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400" alt="Pizza">
+        <h3>Pizza</h3>
+        <p>Price: ₹250</p>
+        <button onclick="order('Pizza')">Order Now</button>
+    </div>
+
+    <div class="food">
+        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400" alt="Noodles">
+        <h3>Noodles</h3>
+        <p>Price: ₹150</p>
+        <button onclick="order('Noodles')">Order Now</button>
+    </div>
+
+</div>
+
+<script>
+    function order(food) {
+        alert("You selected: " + food);
+    }
+</script>
+
+</body>
+</html>
